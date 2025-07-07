@@ -105,4 +105,13 @@ canvas.pack()
 status_label = tk.Label(root, text="Enter a gesture and press start", font=("Arial", 12))
 status_label.pack(pady=5)
 
-# Start c
+# Start camera in background thread
+threading.Thread(target=start_camera, daemon=True).start()
+
+# Run app
+root.mainloop()
+
+# Cleanup
+if cap:
+    cap.release()
+cv2.destroyAllWindows()
