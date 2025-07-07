@@ -1,14 +1,7 @@
-# Core computer vision
 opencv-python==4.9.0.80
 mediapipe==0.10.9
-
-# Data handling
 numpy==1.26.4
 pandas==2.2.2
-
-# ML models and preprocessing
 scikit-learn==1.4.2
-
-# Visualization & debugging
 matplotlib==3.8.4
 streamlit==1.35.0
